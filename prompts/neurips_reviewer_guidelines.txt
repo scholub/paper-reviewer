@@ -1,0 +1,795 @@
+NeurIPS Reviewer Guidelines Summary
+Overview and General Principles
+NeurIPS (Neural Information Processing Systems) is a premier machine learning conference that relies on
+high-quality, fair, and constructive peer reviews to uphold scientific standards. As a reviewer, your role
+is to critically evaluate each paper’s merits and flaws across key dimensions, while providing feedback
+that helps authors improve their work. Always uphold the NeurIPS Code of Conduct and Ethics guidelines
+– maintain confidentiality, avoid conflicts of interest, and treat all submissions and authors with respect
+1
+. Remember that reviews of accepted papers (and possibly rejected ones, if authors opt in) will
+be made public after the decision (though reviewers stay anonymous) 2
+, so professionalism and
+objectivity are paramount.
+Best Practices for Reviewers: In line with NeurIPS standards writing reviews:
+3
+, follow these guiding principles when
+•
+•
+•
+•
+•
+•
+Be thoughtful. Consider that the authors could be students or first-time contributors; frame your
+critique in a way that educates and encourages rather than discourages 4
+. Even when pointing
+out serious issues, do so with empathy and professionalism – you don’t want to crush anyone’s
+4
+spirit.
+Be fair. Evaluate the work itself, not the authors. Do not let personal feelings, biases, or identity
+of the authors (which you should not speculate on) affect your judgment 5
+. Give the paper an
+impartial assessment on its own merits, regardless of whether it aligns with your own research
+agenda or beliefs.
+Be useful. A good review benefits all parties – it helps authors improve their paper, informs other
+reviewers and area chairs, and thus aids the decision process 6
+. Provide constructive feedback
+and actionable suggestions when possible. Your review should not only justify your
+recommendation, but also serve as helpful advice to the authors for revision or future work.
+Be specific. Avoid vague statements like “the paper is bad” or “unclear methodology.” Pinpoint
+specific claims, sections, or experiments that are problematic or could be improved 7
+. For
+each weakness you identify, give concrete examples or evidence (e.g. point to an equation, figure,
+or reference) so that authors understand exactly what issues to address. Specific feedback is
+much easier for authors to act on than generalities.
+Be constructive. Even when you list weaknesses, phrase them in a helpful manner. Instead of
+simply labeling something a flaw, explain why it is a flaw and how it might be remedied. Balance
+criticism with an acknowledgement of what the paper does well. The goal is to improve the work,
+not to reject it outright without explanation. Do highlight strengths and positive aspects too – this
+helps authors know what works and should be kept. Don’t use derogatory or sarcastic language;
+maintain a professional, academic tone throughout.
+Be flexible and open-minded. You might misunderstand something or new information might
+emerge (for example, through the author’s rebuttal or discussion). Be willing to update your
+opinion if the authors clarify a confusion or present new evidence 8
+. If an author response
+addresses your concerns or corrects a misunderstanding, acknowledge it and adjust your review
+or score accordingly. Conversely, if your stance remains unchanged, still note that you considered
+the rebuttal 8
+. The review process is iterative – engage in the discussion phase constructively,
+rather than rigidly sticking to an initial stance.
+1
+•
+Be timely and responsive. Adhere to the review deadlines and respond promptly during the
+discussion period 9
+. A delayed or absent review hurts the authors and the conference. If an
+emergency prevents you from completing the review on time, inform the area chair as soon as
+possible to make alternate arrangements 10
+. Respect that the authors are on a tight schedule as
+well – timely feedback is crucial for them to prepare rebuttals.
+By following these principles, you help ensure the review process is fair, thorough, and respectful. Next,
+we break down the core review criteria that NeurIPS expects reviewers to consider, and how to evaluate
+each.
+Review Structure and Approach
+When writing a NeurIPS review, it’s helpful to follow a clear structure. This ensures you cover all
+important aspects and provide a balanced evaluation:
+1.
+2.
+3.
+4.
+Summary of the Paper: Begin with a brief, factual summary of the paper’s problem, approach,
+and main contributions 11
+. Do not critique or judge the work in this section – simply state what
+the authors did, in your own words (do not copy the abstract) 12
+. A good summary
+demonstrates to the authors and other reviewers that you understand the paper. The authors
+should agree that your summary is accurate if it’s well-written 12
+. This sets the stage for your
+evaluation. (Example: “This paper proposes a new convolutional network architecture for image
+segmentation that introduces a novel attention mechanism. The authors evaluate it on the XYZ
+dataset and show a 5% improvement over the baseline. They also provide a theoretical analysis of
+why the attention mechanism speeds up convergence.”)
+Strengths and Weaknesses: After summarizing, give a detailed assessment of the paper’s
+strengths and weaknesses, touching on each of the key dimensions outlined below (accuracy,
+originality, significance, clarity, etc.) 13
+. It often works well to organize this section by criteria –
+you can have separate paragraphs or bullet points for each aspect (e.g. one for novelty, one for
+clarity, etc.). For each dimension, discuss reasons to potentially accept the paper (strengths)
+and reasons to potentially reject it (weaknesses)】 14 15
+. Be thorough and evidence-based:
+provide justification for your statements. For instance, if you claim “the experiments are
+insufficient,” specify what is missing (e.g. lack of certain baselines or ablation studies). If you
+praise the paper’s clarity, point to an aspect like “the notation in Section 3 was very clear”. This
+section is the heart of your review, where you analyze the paper’s content in depth.
+Questions for the Authors: It is highly recommended to include a few questions or requests for
+clarification directed at the authors 16
+. Think about what points of confusion or potential
+improvements could be addressed during the rebuttal. Good questions often target things that, if
+answered or fixed, could change your evaluation or resolve uncertainties 16
+. For example, you
+might ask for clarification on an experimental detail, or whether a certain baseline was tried.
+Phrasing these as questions invites the authors to respond constructively. (Example: “Did you
+evaluate your model on any out-of-distribution data? If not, how do you think it would
+generalize?” or “Can the authors clarify if Theorem 1 assumes differentiability? This wasn’t
+specified.”) These questions facilitate a productive discussion phase and show that you are open
+16
+to updating your view .
+Limitations and Societal Impact: Consider whether the authors have adequately discussed the
+limitations of their work and any potential negative societal impacts 17
+. NeurIPS
+submissions are expected to include a “Broader Impact” or ethics discussion (and since 2021, a
+2
+5.
+mandatory checklist) where authors reflect on issues like fairness, privacy, or misuse of their
+technology. In your review, comment on whether this discussion is sufficient. Give credit to
+authors who are honest about limitations – do not penalize a paper for acknowledging its
+weaknesses 18
+. In fact, NeurIPS explicitly instructs that authors “should be rewarded rather than
+punished for being up front about the limitations of their work and any potential negative societal
+impact.” 18
+. If the paper lacks a clear discussion of limitations or ethical considerations and you
+identify some, point those out and suggest the authors address them. This shows you’ve thought
+about the work’s broader context. (For instance: “The paper does not discuss limitations – for
+example, the method assumes extensive computational resources and may not be feasible for
+smaller labs. The authors should clarify this.” Or “No potential negative impact is mentioned, but
+there could be fairness concerns if the model is applied to sensitive domains; the authors might
+consider this.”)
+Overall Assessment: Finally, provide an overall evaluation of the paper. This can be a brief
+conclusion stating whether you lean toward accept or reject and why. Summarize the key
+reasons from your above analysis: e.g., “In summary, while the paper introduces a novel idea
+(strength) and is clearly written, I have concerns about the limited experiment on a single dataset
+and unclear theoretical justification (weaknesses). I am borderline on this paper, but slightly lean
+toward acceptance if the empirical concerns are addressed.” Be honest about your confidence in
+your judgment as well – if something is outside your expertise or you’re unsure, it’s okay to
+mention that (NeurIPS reviews include a confidence score where you acknowledge how certain
+you are 19
+). In your text, you might say “I am not an expert in XYZ, so I might have missed
+nuances in the theoretical analysis.” This helps contextualize your review. Avoid absolute
+language if you’re not fully sure – it’s better to say “the proof sketch was hard to follow” than “the
+proof is wrong” (unless you are absolutely certain of an error). Your overall recommendation
+should align with the detailed points you’ve made and should feel consistent and justified.
+Following this structure – Summary, Strengths/Weaknesses by criteria, Questions, Limitations/Ethics,
+and Overall recommendation – will result in a comprehensive and organized review. Next, we detail each
+review dimension you should evaluate and provide guidance on what to look for and how to provide
+feedback in each area.
+Accuracy and Correctness of Claims and Results
+Definition: This criterion assesses whether the paper’s technical claims are valid and supported by
+evidence. In other words, is the work technically sound and correct in its methodology, theoretical
+analysis, and results? A paper can be novel and interesting, but if its core results are incorrect or
+unsupported, it cannot be accepted into a top conference like NeurIPS.
+What to Evaluate: As a reviewer, you should scrutinize the paper’s content for accuracy, rigor, and
+credibility of results:
+•
+Theoretical Soundness: If the paper includes theoretical propositions (lemmas, theorems,
+proofs), check that all assumptions are stated and the logic is correct. Are there gaps or leaps in
+reasoning? If there’s a proof sketch, is it believable, or do you spot any errors or unstated
+conditions? If important proofs are only in the appendix, you may at least verify key steps. Make
+sure claims match the provided proofs or references. If you suspect an error, outline it
+specifically (e.g., “The proof of Theorem 2 seems to assume uniform continuity, which wasn’t
+stated; without it the result might not hold.”).
+3
+•
+•
+•
+•
+Empirical Accuracy: If the paper makes empirical claims (e.g., “our method achieves 90%
+accuracy” or “outperforms baseline X”), check that these are backed by data in the results. Verify
+that tables or figures actually support the textual claims. Sometimes authors might overstate a
+result in the introduction that isn’t fully supported in experiments. Look for consistency: do the
+numbers in the paper add up? If you can, double-check any statistical claims (like p-values,
+confidence intervals) for correctness.
+Methodological Rigor: Are the methods and algorithms described correctly and applied
+appropriately? For example, if the paper proposes an algorithm, does it psuedocode match the
+described method? If there’s a mistake in an equation or an algorithm step, it can invalidate
+results. Check for things like correct problem setup, whether the baselines are implemented
+properly (if described), and whether the comparisons are fair (more on this in Empirical Validation
+section). Essentially, ensure the study is done in a scientifically sound manner.
+Evidence Support: Overall, are the claims in the paper well-supported by either theoretical
+analysis or experimental results? NeurIPS guidelines explicitly ask: “Are claims well supported
+(e.g., by theoretical analysis or experimental results)?” 20
+. Every central claim should have some
+form of support – either a proof, a reference to prior proven results, or empirical demonstration.
+If a claim is made without support, treat that as a weakness and mention it. For instance, “The
+authors claim the method converges in polynomial time, but no proof or reference is given – this
+needs evidence.”
+Completeness of Results: Does the paper feel like a complete piece of work or an early-stage
+project? 21
+If the authors only solved half the problem or have significant parts labeled as “future
+work,” note that. Incomplete work might be premature for publication. However, use judgment:
+sometimes a paper addresses a complex problem and openly discusses what’s left – that can be
+fine if what is done is valuable. But if important components are missing or results are only
+preliminary, that’s a weakness to point out.
+How to Provide Feedback: When discussing accuracy and correctness, be meticulous yet fair. If you
+identify an error or flaw, explain its impact. Is it a minor typo in a proof, or does it undermine a key
+theorem? Is it an experimental artifact, or does it call the main conclusion into question? Make this clear
+in your review. Use a neutral tone: e.g., “The derivation in Eq. 5 appears to be incorrect; differentiating
+the loss seems to have a sign error, which might affect the subsequent results.” Suggest fixes if possible:
+“If the authors assume convexity, the proof of convergence might go through.” If the claims are all
+correct and supported, state that explicitly as a strength: “The paper’s claims are well-supported by
+both theory (Theorem 1) and experiment (Table 2), lending strong credibility to its conclusions.” This
+assures the authors and ACs that you’ve rigorously vetted the paper’s core validity.
+In summary, for accuracy and correctness, ensure the paper’s content is trustworthy. A NeurIPS-
+worthy paper should have no major technical flaws: if you find any, that’s often grounds for rejection
+unless they can be fixed easily. Use the review to verify and validate the science, pointing out any
+unsupported assertions, methodological mistakes, or inconsistencies in results. Assigning a high
+“soundness” rating means you believe the technical content is solid 22
+, whereas a low one means
+there are significant doubts or errors. Support your assessment with clear reasoning in the review text.
+Novelty and Originality
+Definition: This criterion considers how original and innovative the work is. Novelty means the paper
+offers something new to the community – a new problem, a new method or theory, a new dataset, or
+even a new perspective on an old problem. At NeurIPS, which receives thousands of submissions, a paper
+should have sufficient originality to stand out and advance the field.
+4
+What to Evaluate: You should assess whether the ideas and contributions are new and how the paper
+positions itself relative to prior work:
+•
+•
+•
+•
+•
+New Problem or Question: Does the paper identify or tackle a novel problem or research
+question? If so, is this problem significant (see Significance section) and previously unexplored?
+Sometimes framing a known problem in a new way or asking a new question can be a form of
+originality. Evaluate if the authors clearly explain why this problem is distinct from existing ones.
+New Method or Approach: If the paper proposes a new algorithm, model, or theoretical
+framework, determine how it differs from existing approaches. Is it a genuine innovation or just
+a minor tweak of a known method? If it’s a combination of known techniques, that can still be
+valuable if done in a non-obvious way or yielding new insights 23
+. NeurIPS guidelines note that
+23
+even a “novel combination of well-known techniques” can be a worthy contribution –
+originality doesn’t strictly mean everything must be invented from scratch. Consider the creativity
+involved: does the approach surprise you or seem inventive?
+Comparison to Prior Work: Check the related work section and citations. Are the authors
+aware of the existing literature, and do they clearly delineate what’s new in their work versus what
+was done before? A paper should explicitly say “Unlike Smith et al. (2022), we do X” or “To our
+knowledge, this is the first work to….” If the paper fails to cite important related work, that’s a red
+flag for both novelty and scholarly thoroughness. Part of your job is to catch if a purportedly novel
+idea has been done before. If you know of prior work that the authors missed, point it out in your
+review (with references if possible). This is crucial: if you argue the paper isn’t novel, back up
+your claim with citations to the work that did it first】 24
+. For example: “The idea of using
+attention for this task was actually explored by Zhao et al. (2020), which the authors did not
+cite. The current paper’s approach looks very similar, so the novelty is in question.”
+Providing such references makes your case much stronger and is helpful to both authors and
+25
+area chairs. Do not** assert “lack of novelty” without evidence – that is not useful to anyone .
+Incremental vs. Substantial Advance: Consider how big the originality gap is between this
+work and what came before. If the paper only makes a small incremental improvement on a
+known approach, note that. Incremental advances aren’t necessarily reject-worthy if the problem
+is important, but at NeurIPS the bar is high – incremental work needs to be well-executed and
+justified. On the other hand, if the paper introduces a groundbreaking new idea or a very
+different approach, highlight that as a major strength. Be wary of cases where authors claim
+novelty but it’s just rebranding of prior ideas; verify those claims. Conversely, sometimes authors
+under-sell their novelty, so if you think they actually have a novel insight that they didn’t
+emphasize, you can note that too (it helps the AC appreciate the contribution).
+Original Insights: Originality isn’t only about algorithms. A paper might offer a new insight or
+understanding of existing methods – for example, an analysis that reveals why a technique
+26
+works, or an empirical study that unifies perspectives. This counts as a contribution as well .
+NeurIPS guidelines explicitly acknowledge that originality can include novel insights gained by
+evaluating existing methods, or improved efficiency or fairness for known methods 26
+. So,
+consider whether the paper provides a fresh understanding or improvement on prior work. If so,
+that is a form of originality to recognize.
+How to Provide Feedback: When writing about novelty, clearly state what the paper’s main new
+contribution is, in your understanding. If you find it original, articulate how it differs from past work: e.g.,
+“Unlike previous GAN models, this paper introduces a new regularization term that, to my knowledge,
+hasn’t been used before.” If you are unsure about the novelty (maybe you suspect similar work exists),
+you can say so and possibly ask the authors (this could be a question: “The approach seems similar to X;
+can the authors clarify the differences?”). If you do identify missing citations or prior art, list those
+references as part of your weakness feedback – this not only justifies your assessment but also helps the
+authors improve their camera-ready if the paper is accepted.
+5
+For a paper lacking in originality, phrase it constructively: “The contribution over prior work appears
+limited: the method is essentially an application of Smith (2021)’s technique to a new dataset, with minor
+modifications. It would strengthen the paper to clarify the novel aspects – for example, is there any
+improvement in algorithmic efficiency or accuracy due to these modifications?” This kind of feedback
+signals the issue without dismissiveness, and it invites the authors to either explain the novelty better or
+accept that it’s incremental.
+In summary, assess whether the paper offers something meaningfully new to the community. Novelty
+is a key factor in top-conference decisions: a paper that is correct but not novel enough often gets
+rejected. Conversely, a highly novel paper might be accepted even if it has some weaknesses elsewhere
+(if they’re fixable). So your review should pinpoint the degree of originality and its importance. Encourage
+authors to place their work in context and cite related work fully – both praise good scholarship and
+point out omissions if any. Ultimately, your goal is to ensure that NeurIPS publishes papers that push the
+field forward, not ones that reinvent the wheel without acknowledgment.
+Significance and Impact on the Field
+Definition: The significance criterion evaluates how important and impactful the paper’s contributions
+are, if they are indeed correct and novel. In other words, assuming the claims are valid, “So what?” – Will
+this work matter to the research community or industry? Does it advance the state of the art in a
+substantial way, or open up new avenues for future research?
+What to Evaluate: You should consider both the scope and the potential impact of the contributions:
+•
+•
+•
+Research Impact: Ask whether the results or insights in the paper are likely to influence future
+research. Will other researchers build upon this work? For example, a paper might introduce a
+new technique that could become widely used, or provide evidence that challenges current
+assumptions and thus alters how people approach a problem. NeurIPS guidance frames this as:
+“Are others (researchers or practitioners) likely to use the ideas or build on them?” 27
+. If you
+believe the answer is yes, explain why – e.g., “This new training paradigm could inspire a lot of
+follow-up work in efficiency for deep networks.” If not, explain why the work might be too narrow
+or minor to have much follow-through.
+Practical or Societal Impact: Consider if the work has implications beyond academia. Does it
+address an important application or a societal need? A paper’s significance can be higher if it
+potentially benefits other fields or real-world problems. For example, a new algorithm that greatly
+improves protein folding or climate modeling has clear importance. On the other hand, a paper
+solving an obscure toy problem might be less significant. Note: be careful to judge the paper on
+what it presents, not purely on hype. If a paper claims huge real-world impact, check that it’s
+justified. But do include in your review if a contribution could be meaningful in practice (or if the
+authors claim it but you’re not convinced, say so).
+Advancing the State of the Art: Determine if the paper provides a significant advancement over
+previous methods or understanding. Does it solve a problem that was previously unsolved or
+improve performance on a key benchmark by a notable margin? Does it introduce a new
+capability (e.g., a model that can do something no prior model could)? If the improvements are
+modest (say, a 1% accuracy increase on a well-studied benchmark), that might be less significant
+unless accompanied by other insights. If the improvements or results are groundbreaking,
+emphasize that. NeurIPS reviewers often consider whether a paper is a real “leap” or just a small
+step.
+•
+Breadth vs. Niche: Evaluate the generality of the contribution. A paper can be significant in a
+narrow subfield (deep significance in a niche) or moderately significant across a broader area.
+6
+•
+Neither is inherently bad, but you should comment on it. If it’s a niche problem, you might note
+“This will be of interest mainly to researchers in X” – which is fine if X is an important subdomain,
+but if X is very narrow, the AC might consider that when balancing conference content. If the
+contribution is more general, affecting many areas (e.g., a widely applicable optimization
+technique or theoretical insight that could apply to various models), that increases its impact.
+Long-Term vs. Short-Term Impact: Think about whether the contribution will stand the test of
+time or if it’s more of an incremental improvement that might be obviated soon. This can be hard
+to predict, but your expert intuition matters. If you suspect the idea is a dead-end or only
+marginally useful, mention that with reasoning. Conversely, if it’s laying groundwork for a new line
+of research, highlight that significance.
+How to Provide Feedback: When writing about significance, connect your points to the field’s context.
+For example: “This paper’s results are significant because achieving even a 5% improvement on the ABC
+dataset was considered very difficult – it could push the community’s benchmark forward.” Or, “The
+theoretical analysis provides a new understanding of why method Y fails in high dimensions, which is a
+question many researchers have been puzzled by – thus, the insight could be quite influential.”
+If you believe the work is not very significant, articulate that diplomatically: “The contributions, while
+technically sound, appear to be incremental. The improvement over prior work is small (e.g., 0.5% better
+accuracy than the baseline), and the paper does not identify a new capability or understanding beyond
+what was already known. As such, the impact on the field might be limited.” This gives the authors clear
+information on why you find the impact lacking. If there are specific reasons (like “only tested on toy
+data” or “addresses a very narrow case”), state those.
+It is also constructive to suggest how the work’s impact could be increased or clarified. For instance:
+“If the authors could demonstrate their algorithm on a more challenging, real-world dataset, the
+significance would be much higher.” Or “Linking this theoretical result to practical outcomes (perhaps by
+suggesting how it could improve optimization algorithms) would help show its importance.” Even though
+such changes might be beyond a rebuttal and more for future work, it shows you are thinking about the
+paper’s value and how to enhance it.
+Remember to acknowledge any broader impacts or interdisciplinary significance if present. For
+example, “Interestingly, this ML technique could impact neuroscience, as it aligns with how memory is
+hypothesized to work – this cross-disciplinary relevance adds to its significance.” These insights can
+sometimes sway a borderline case by showing hidden value.
+In sum, assess and communicate how much the paper moves the needle for AI/ML or related fields.
+An ideal NeurIPS paper has both high novelty and high significance. However, there are cases (e.g., a very
+novel idea that isn’t fully realized yet, or a solid engineering improvement that is somewhat incremental)
+where there’s a trade-off. Your review should clearly lay out the case, so that area chairs understand your
+viewpoint on the work’s importance. This will factor heavily into your overall recommendation.
+Clarity and Quality of Writing
+Definition: Clarity refers to how clearly written and well-structured the paper is. A paper should
+present its ideas in a way that readers (especially experts in the field) can easily follow and understand.
+Even great ideas can be hampered by poor presentation, so NeurIPS values clear exposition. This
+criterion covers writing quality, organization, figures, and overall presentation.
+7
+What to Evaluate: You should examine the paper’s communication effectiveness:
+•
+•
+•
+•
+•
+Organization and Structure: Is the paper well-organized, with a logical flow of sections?
+Typically, a paper should have a clear introduction (setting up the problem and contributions),
+background or related work for context, a methodology section, experiments, and a conclusion.
+Check if each section leads naturally to the next. If you found it hard to pinpoint where certain
+information was, that’s an organization issue. For instance, if important details of the method are
+hidden in the experimental section, that can confuse readers. Note such issues: “The paper’s
+structure could be improved – e.g., the definition of the model is split across sections 3 and 4,
+making it hard to follow.”
+Clarity of Explanations: Evaluate whether the writing is clear and unambiguous. Are the
+concepts explained well, with sufficient background for an informed reader to understand? Look
+at how key terms are defined (or whether they assume the reader knows them). If the paper
+introduces a new concept or notation, does it explain it clearly? If you find yourself re-reading
+sentences or guessing what something means, there may be a clarity problem. Also check for
+consistent notation and whether each symbol used is defined. If certain parts are confusing or
+dense, identify them in your review so authors know where to improve.
+Quality of Figures and Examples: Figures, tables, and examples are crucial for clarity. Do the
+figures have readable text and self-contained captions? Do they illustrate the claims made in the
+text effectively? A good paper will use diagrams to explain the model architecture or provide
+intuitive examples of the problem being solved. If a figure is confusing or a table is poorly labeled,
+mention that. Also, if the paper would benefit from an illustrative example and none is given, you
+could suggest adding one. For instance: “An example illustrating how the algorithm processes an
+input step-by-step would greatly help readers.”.
+Reproducibility of Description: Clarity also means providing enough detail that an expert
+reader could reproduce the work (perhaps not fully, but understand how to do so). Check if the
+paper describes experimental settings, model architectures, or evaluation metrics clearly (overlap
+with Empirical Validation here). If important details are missing (e.g., “the paper doesn’t specify
+the learning rate or number of training epochs”), point that out as a clarity issue too, because it
+leaves the reader guessing. NeurIPS guidelines emphasize that “a superbly written paper provides
+enough information for an expert reader to reproduce its results.” 28
+. Use that as a gold standard
+for clarity.
+Language and Grammar: Is the paper written in coherent English (or the conference’s language)
+with proper grammar and spelling? Minor English mistakes are common, especially if authors are
+non-native speakers, and you should be a bit forgiving of small grammar issues as long as they
+don’t impede understanding. However, if the writing is so poor that it’s hard to follow the
+content, that is a valid concern. Mention it diplomatically: “The paper’s language needs work –
+there are many grammatical errors and unclear sentences that hinder understanding. I
+recommend a thorough proofreading or revision for clarity.” This alerts the authors (and chairs)
+that clarity is a problem. Again, stress where possible – e.g., if the worst issues are in a certain
+section, note that.
+How to Provide Feedback: For clarity issues, it’s important to be constructive. If something is unclear,
+don’t just say “this is unclear”; explain the confusion and ideally how to fix it 29
+. For example: instead
+of “Section 4 is confusing,” say “Section 4 was hard to follow because too many details are deferred to the
+appendix. Perhaps the authors could provide a brief summary of the algorithm’s steps in the main text for
+clarity.” This both identifies the problem and gives a suggestion. NeurIPS guidelines specifically instruct
+reviewers: “If [the paper is not well organized], please make constructive suggestions for improving its
+30
+clarity.” . Do exactly that.
+8
+Also, highlight positive aspects of clarity as strengths. If the paper is particularly well-written or nicely
+structured, say so: “The paper is very clearly written and well-organized; the introduction does an
+excellent job of motivating the problem, and the methodology is easy to follow.” This helps authors know
+what they did right (and the area chair to know that clarity is not a concern). Good writing should be
+acknowledged since it benefits the community.
+If you noticed the paper adheres to good practices (like including a pseudo-code algorithm, or providing
+a diagram of the model), you can mention those approvingly. On the other hand, if you think a certain
+good practice was missing, you could recommend it: e.g., “It would improve clarity to include a pseudo-
+code summary of the training procedure.”
+Be mindful to separate major clarity issues versus minor typos. You usually don’t need to list every
+typo in the review (reviews are not copy-editing services), but if you caught a few, you can mention them
+briefly or provide examples (“e.g., page 5, ‘recieve’ should be ‘receive’”). This is optional and usually done
+if you’re otherwise positive about the paper and want to help polish it. If the list is long, perhaps
+summarize: “Numerous minor grammatical errors are present; I recommend careful proofreading.”
+In summary, communicate to what extent the paper’s writing quality helped or hindered your
+understanding. If clarity is a weakness, treat it seriously (because at NeurIPS, papers should be
+understandable). If clarity is a strength, emphasize that the authors did a good job in presentation. Your
+feedback should help authors improve the readability, which ultimately helps the whole community.
+Empirical Validation and Experimental Design
+Definition: This criterion pertains to the quality and rigor of the experiments or empirical evaluation
+in the paper. Most machine learning papers include experiments to demonstrate the effectiveness of a
+proposed method or to support theoretical claims. As a reviewer, you must examine whether the
+experiments are well-designed, sufficient, and properly interpreted. Essentially, do the experiments
+adequately validate the paper’s claims? Are they designed according to good scientific practice?
+What to Evaluate: For any paper with an experimental component (which is the majority at NeurIPS),
+consider the following aspects:
+•
+•
+Relevance of Experiments to Claims: Identify the main claims or hypotheses of the paper and
+check if the experiments directly test those claims. Every result presented should have a
+purpose. For example, if a claim is “our method generalizes better to unseen data,” then you
+expect to see an experiment on a test set or new dataset showing better generalization. If such
+evidence is missing, that’s a gap. Note in your review if any key claim is unsubstantiated by
+experiments. Conversely, if the experiments cover all the claims nicely, that’s a strength to
+mention.
+Choice of Datasets/Benchmarks: Evaluate whether the paper uses appropriate and diverse
+datasets or benchmarks for evaluation. If it’s a vision paper, do they test on standard image
+datasets (like CIFAR, ImageNet) or a relevant specialized dataset? If a new algorithm is proposed,
+do they compare it on tasks where it’s supposed to excel? A common issue is testing on too few
+or too simplistic datasets, which limits the credibility of the results. If you find that, say so: “The
+evaluation is done only on a toy dataset of 100 samples, which raises concerns about whether the
+method would scale or perform well on more realistic data.” Encourage testing on more datasets if
+possible. On the flip side, praise a thorough evaluation: “The authors evaluate on three distinct
+benchmark datasets, which strengthens confidence that the improvements are not specific to one
+data source.”.
+9
+•
+•
+•
+•
+•
+•
+•
+Baselines and Comparisons: Check that the paper compares the proposed method against
+strong, relevant baselines or prior methods. For a new algorithm, there should be comparisons
+with the previous state-of-the-art or at least standard approaches in that domain. If the authors
+only compare to weak or outdated baselines, the improvement shown may not mean much.
+Identify if any obvious baseline is missing. For instance: “The authors should compare against the
+recent method of Jones et al. (2023), which tackles a similar problem – without this, it’s unclear if
+the gains are due to novelty or just easier comparisons.” If baselines are included, examine if they
+are implemented and reported fairly (e.g., same dataset splits, tuned hyperparameters). Unfair
+comparisons (like not tuning a baseline properly) are a flaw – highlight them if you suspect it.
+Rigor of Experimental Methodology: Consider how the experiments are conducted:
+Did the authors report relevant details like train/test splits, hyperparameter settings, number of
+training epochs, etc.? A good paper will include enough detail that one could replicate the
+experiment (perhaps details in appendix due to space). If critical details are missing (e.g., “batch
+size not mentioned”), point that out. The NeurIPS paper checklist specifically asks if “all training
+details (e.g., data splits, hyperparameters, how they were chosen) are specified” 31
+. Lack of
+such detail can undermine reproducibility.
+Are the experiments run multiple times to account for variance? In ML, results can vary across
+random seeds or runs. Check if the paper reports error bars, standard deviations, or statistical
+significance where appropriate. If a paper reports a single number without any variability
+measure, and it’s a stochastic method, that’s a concern. NeurIPS encourages reporting error bars
+or confidence intervals 32
+. If the paper did so, that’s great – mention that they performed
+significance testing or multiple runs. If not, you can say: “The results are given as single-run
+numbers; it would increase confidence to report variability (e.g., with standard deviations over
+several runs).”
+Ablation Studies and Analysis: Good experimental design often includes ablation studies
+(testing the contribution of different components of the method) or analysis of why the method
+works (e.g., examining learned representations, or testing on controlled variations of data). Check
+if the paper has any ablation experiments: e.g., removing a component of their model to see the
+effect. If not, and the method is complex, you might suggest it: “An ablation study would
+strengthen the paper – it’s unclear which part of the architecture contributes most to the
+performance gain.”. If yes, comment on what those ablations indicate.
+Edge Cases and Robustness: See if the evaluation includes tests for robustness or different
+settings. For instance, if the method is a new training algorithm, did they try it on various model
+architectures or just one? If it’s a reinforcement learning method, did they test on multiple
+environments? If the paper only shows a very narrow evaluation (one setting), note that
+limitation.
+Reproducibility and Open Science: NeurIPS has been encouraging reproducibility. Check if the
+authors indicate availability of code or data. The official checklist asks if the code and data
+needed to reproduce main results are included or linked 33
+. If the paper mentions a code
+repository or says code will be released, that’s a plus (though not mandatory). If they don’t, and
+the results are complex, you can mention that releasing code would be beneficial. Also, if the
+paper uses a proprietary dataset or something not available, note if that hampers verification.
+To systematically evaluate experiments, you might find it useful to answer these questions in your review
+(you can even structure some of your comments as answers to these points): - Do the experiments
+support the main claims of the paper? 20
+- Are there any missing experiments that the reader would
+reasonably expect? - Are the comparisons fair and state-of-the-art? - Is the experimental methodology
+described in enough detail for reproducibility? - Are the results analyzed and interpreted insightfully, not
+just presented?
+10
+How to Provide Feedback: When you critique the empirical evaluation, be specific about which aspect is
+lacking or could be improved. For example: - If it’s missing baselines: “The experimental comparison is
+incomplete. Method Z is a top competitor in this area and should be included to validate the
+improvements.” - If it’s about data: “Using only synthetic data limits the conclusions. Testing on at least
+one real-world dataset would make the results more convincing.” - If methodology: “It’s not stated
+whether the hyperparameters for each baseline were tuned. If they were not, the comparison might not
+be fair. The authors should clarify this.” - If something seems fishy: “Surprisingly, Model A outperforms
+Model B by 20%, which contradicts prior work. Is there an explanation for this big jump? It raises
+concerns about whether the experimental setup for Model B was correct.” – Here you’re pointing out a
+possible issue without directly accusing, inviting clarification.
+Also, acknowledge well-done experiments. If the paper has an extensive experimental section, say
+something like: “The experimental evaluation is thorough – the authors test a variety of conditions and
+the results consistently support their claims.” If you found their analysis insightful (like they explained
+why an algorithm works under some conditions but not others), mention that as a strength.
+It’s often useful to provide suggestions for additional experiments or analyses in a constructive way.
+While authors may not be able to add entirely new experiments during the rebuttal, your suggestions
+could guide future work or camera-ready additions. For instance: “To further strengthen the results, I
+suggest testing the approach on a larger dataset, as the current evaluation is only on small-scale data.
+This would confirm scalability.” or “An interesting analysis could be to see how performance degrades
+with increasing noise – this could be a valuable addition.”
+Be careful not to overreach – ask for additional experiments only if they seem feasible and truly valuable.
+Don’t request an unreasonable amount of new work; focus on what’s most critical to support the claims.
+Finally, assess the compute/resources aspect if relevant. The checklist asks if the paper provided
+information on compute resources used 34
+. If the method requires an unrealistic amount of
+computation (e.g., “trained on 500 GPUs for a month”), note that as a practical limitation under
+significance or reproducibility. It might not be a reason to reject by itself, but it’s worth mentioning if the
+approach is impractical to reproduce.
+In summary, your review should establish whether the paper’s experimental evidence is solid and
+sufficient. If you find it lacking, clearly explain what’s missing or could be improved. If it’s exemplary,
+praise it. Remember that at NeurIPS, a paper with poor experimental validation of its claims is unlikely to
+be accepted – part of your job is to ensure authors have done their due diligence in convincing the
+community via experiments. Your feedback can help them identify blind spots or strengthen their
+empirical section.
+(If the paper is theoretical with no experiments, you can obviously skip this criterion, but then ensure the
+theoretical validation is solid in lieu of experiments.)
+Ethical Considerations and Societal Impact
+Definition: NeurIPS expects authors to consider the ethical implications and broader societal impact
+of their work. This includes how the research could be used (or misused), whether it raises fairness or
+bias concerns, if it respects privacy, and generally if conducting or publishing the research is ethically
+responsible. As a reviewer, you must check if any ethical issues are present and whether the authors have
+addressed them appropriately. If serious ethical concerns exist, you have a responsibility to flag them.
+11
+What to Evaluate: Examine the paper from an ethical standpoint and its potential impact on society:
+•
+•
+•
+•
+•
+•
+Disclosure of Potential Negative Impacts: Does the paper include a “Broader Impact” section
+or ethics statement? Since 2020, NeurIPS papers often have a section discussing societal
+implications. Look for it, typically at the end or in the supplement. If it’s there, read what the
+authors say. Did they thoughtfully consider how their work might be used in the real world, and
+any possible negative outcomes? For example, if the paper is about generative models, did they
+mention potential misuse for deepfakes? If it’s a dataset paper, did they discuss privacy or bias in
+the data? Evaluate the honesty and thoroughness of this discussion. If it’s missing entirely and
+you think it should be there, that’s a point to note.
+Fairness and Bias: Consider whether the research might inadvertently perpetuate or introduce
+bias. For instance, an AI model that makes decisions about people (hiring, lending, etc.) could be
+biased against certain groups if not carefully trained and tested for fairness. If the paper is in such
+a domain, check if the authors did fairness analyses or at least acknowledged the issue. If not, you
+might say: “The paper doesn’t address fairness considerations – since this is a facial recognition
+model, how does it perform across different demographic groups? This should be discussed.” If
+they did address it, note that positively: “The authors conducted a bias evaluation, which is
+commendable.”
+Privacy and Data Usage: Check if the work involves sensitive data (personal data, medical
+records, etc.). If yes, did the authors mention consent, anonymization, or compliance with
+regulations (like GDPR)? If they’re using a dataset that might have privacy issues and they didn’t
+mention it, raise that concern. For example: “The dataset includes user social media data; the
+paper should clarify if data was collected with consent or is publicly available to ensure ethical
+use.”. Also, if they use any data that has usage restrictions (maybe scraped data or something),
+flag that if unclear.
+Potential Misuse or Harmful Applications: Think about how the technology could be misused.
+Many powerful AI techniques can be double-edged. For example, research on surveillance,
+generative media, or recommendation systems could be misappropriated. If the paper’s
+contribution could be used maliciously or have unintended harmful consequences, note whether
+the authors acknowledge this. If not, it’s worth bringing up: “This method could potentially be
+used to generate very realistic fake videos. The authors have not discussed this risk; it would be
+responsible to include a discussion on misuse mitigation.” NeurIPS doesn’t necessarily reject
+papers for having potential misuse (unless it’s extreme and no redeeming use), but they do want
+authors to show awareness.
+Compliance with Ethical Standards: Ensure the work itself was carried out ethically. For
+instance, if there were human subjects or user studies, did they mention IRB approval or consent?
+If they used animal data or something, any compliance needed? These are less common, but just
+be mindful. Also, check for plagiarism or improper attribution as an ethical issue (hopefully not
+common at this level, but if you recognize large chunks copied from another work, that’s a serious
+violation – you should confidentially alert the area chair in that case).
+Environmental Impact: Sometimes, especially for very large models, reviewers consider the
+environmental ethics (carbon footprint) etc. NeurIPS introduced a checklist question about
+compute resources 34
+which partly ties to this – how many GPU hours etc. While not a primary
+reject reason, you can note if a method is extremely resource-intensive and discuss if that’s
+justified or if the authors acknowledge it.
+NeurIPS has dedicated Ethics Reviewers and an ethics review process. If you as a reviewer feel a paper
+has a significant ethical issue, you can formally flag it for ethics review 35
+. That brings in an ethics-
+focused reviewer to evaluate the paper. This is typically done for cases like potential harm outweighing
+benefits, violations of the NeurIPS Code of Ethics, etc. For example, research that facilitates mass
+12
+surveillance or deception might be flagged. In your review, if you choose to flag, you would indicate that
+36
+and likely also describe the ethical concern in the “ethical concerns” section of the review form .
+NeurIPS ethics guidance covers various areas that might raise concern 37
+. These include: - Bias and
+fairness: Does the technology treat all groups equitably? - Inadequate evaluation: (Which can be an ethics
+issue if claims aren’t properly verified, though that’s more of a scientific issue.) - Misuse and potential
+harm: Could it be used in ways that infringe on human rights or cause harm? - Privacy and security: Does
+it respect privacy, or could it be used to violate it? - Legal compliance: Does it adhere to laws (e.g., using
+only data it has rights to)? - Research integrity: Any plagiarism, fraud, etc., which is rare but critical.
+Your job is not to conduct a full ethics review, but to raise any flags and to check that authors did their
+part in addressing obvious concerns.
+How to Provide Feedback: If the paper adequately covers ethical considerations (e.g., has a thoughtful
+broader impact section), you can note this as a positive aspect: “The authors have included a detailed
+discussion of the societal implications of their work, including potential negative impacts and
+mitigations, which is appreciated.” This shows you took that section seriously.
+If you identify an ethical issue that is not addressed, mention it in a factual, non-accusatory tone. “One
+concern is that the model could be biased against certain demographics, but the paper provides no
+analysis or discussion of this. This should be examined to ensure fairness.” or “The paper uses a
+proprietary dataset without clarifying if they had access permission; this raises ethical questions about
+data use.” Stick to the facts and why it matters.
+If the issue is severe, you might write something like: “Serious Ethical Concern: The paper proposes X,
+which could be used for Y (harmful purpose). The authors have not provided any ethical commentary on
+this. Given the potential for misuse, this is a significant omission. I would recommend an ethics review for
+this paper.” This signals strongly to the AC and ethics board that attention is needed.
+Also remember to praise transparency. NeurIPS explicitly tells us not to penalize authors for being
+honest about limitations or societal impact 18
+. So if the authors say “our model might be biased in X
+way” or “we didn’t test on group Y”, do not use that honesty against them as a reason to reject. In fact,
+commend it and then objectively discuss if the issue is addressable. For example, “The authors
+acknowledge that their model underperforms on female subjects – this transparency is good. It would be
+even better if they could propose or evaluate a mitigation, but the acknowledgment itself is positive.”
+In summary, always consider the ethical dimension of the research. If everything is clear and clean, this
+may just be a short note in your review. But if something stands out, it’s your duty to mention it. This
+helps maintain the integrity and social responsibility of research published at NeurIPS. Providing
+constructive ethical feedback might include suggestions like: “The paper would benefit from a Broader
+Impact discussion. For instance, how might this tool be misused, and are there safeguards?” By doing so,
+you encourage authors to think more deeply about these issues, which is a key outcome NeurIPS desires
+from the review process.
+Providing Constructive, Respectful, and Useful Feedback
+Beyond evaluating technical criteria, a critical part of the reviewer’s job is to communicate your
+evaluation effectively. A NeurIPS review should not only inform the final decision but also help authors
+improve their work, whether it’s eventually accepted or not. This requires writing your review in a
+13
+constructive, respectful, and clear manner. Here are guidelines on tone and style for writing a great
+review:
+•
+•
+•
+•
+•
+•
+Maintain a Professional and Courteous Tone: Always address the work, not the people. Write in
+a formal, objective style. Even if you strongly dislike a paper, do not use harsh or demeaning
+language. For example, avoid phrases like “It’s obvious the authors have no idea what they’re
+doing” – such personal attacks are inappropriate and unproductive. Instead, focus on specifics:
+“The paper lacks a comparison against method X, which is crucial for establishing the
+contribution.” Never assume the authors’ motives or abilities. Respectful language is key, as your
+review may be one of the only feedback channels for the authors. If this paper is the work of a
+first-year student, your words can heavily influence their perception of peer review and research
+4
+. Critique firmly but kindly, as you would like others to critique your work.
+Be Constructive and Helpful: Frame your critiques in a way that aims to improve the paper.
+Instead of just listing what is wrong, whenever possible suggest how it could be made right. For
+example, rather than “The paper fails to address scenario X,” you could write “The paper fails to
+address scenario X, and I suggest evaluating this scenario because it’s common in practice and
+could strengthen the claims.” This way, you’re giving the authors a path forward. Even if the paper
+is likely to be rejected, your feedback can help them in future submissions. A useful review offers
+guidance. As the guidelines say, “A good review is useful to all parties involved: authors, other
+reviewers, and area chairs.” 38
+. Think of yourself as a mentor pointing out how the work could be
+better, not just a gatekeeper listing faults.
+Be Specific in Feedback: We mentioned this before, but it’s worth repeating: specific feedback is
+far more useful than general statements 7
+. If you find something confusing, point to the exact
+part. If you think a certain reference is missing, name that reference. If a claim is not convincing,
+explain exactly why (e.g., “the claim in line 123 isn’t backed by the experiment in Table 2, which
+actually shows a smaller effect”). This specificity shows the authors what to address. Avoid
+sweeping statements like “The paper is poorly written” or “Experiments are inadequate” without
+elaboration – these frustrate authors because they don’t know how to act on them. Instead, detail
+why you think that and give an example.
+Balance Criticism with Appreciation: Every paper, even those with many issues, usually has
+some positives. It might be a new idea (even if execution failed), or a strong experimental effort
+(even if interpretation is poor), etc. Make sure to acknowledge the strengths of the paper as well,
+not only the weaknesses. This makes the review feel more fair and unbiased. It also helps authors
+see what they did well, so they keep those aspects strong. For example, “The authors tackle an
+important problem and the paper is well-motivated. However, the technical approach has some
+flaws…”. If a paper truly has no redeeming qualities (which is rare), you should still remain neutral
+and factual in explaining the problems.
+Use “I” Statements for Opinions: It can sometimes help to phrase strong critiques as your own
+perspective rather than absolute fact (especially if it’s subjective). For example, “In my view, the
+significance of this contribution is limited because…” instead of “This work is insignificant.” This
+leaves room for discussion and doesn’t come off as dogmatic. It’s clear you are giving an opinion
+(albeit an informed one), which can soften how criticisms land. Also, avoid absolute language like
+“This paper completely fails to…”. Instead, “The paper does not succeed in…”. Be firm but not
+extreme in wording.
+No Ad Hominem or Unauthorized Info: Never mention anything about the authors’ identity,
+background, or what you think their experience is. The review must be about the paper, not the
+people. Also, do not reference information that violates anonymity or comes from outside the
+submission (e.g., “I saw an earlier tech report of this work on arXiv…” – if the submission is
+double-blind, avoid indicating you know who the authors are or linking to a non-anonymous
+version). Keep the review self-contained and focused on the submitted content.
+14
+•
+•
+•
+•
+•
+Address the Paper at the Right Level: Tailor your feedback to an appropriate level of detail. If
+you’re an expert, it’s easy to get lost in nitpicks that a more general reader might not care about.
+Make sure you’ve covered the big-picture issues (novelty, soundness, etc.) before diving into
+smaller details. It’s fine to include some minor comments (and authors do appreciate them), but
+prioritize the most important points in your review structure. You can even label minor
+suggestions as such. E.g., “Minor comment: The notation $r$ was used for both the discount rate
+and the reward in different sections, which was a bit confusing.” This signals that it’s not a major
+flaw, just a helpful suggestion.
+Encourage Discussion: Sometimes you might be uncertain about something or feel another
+reviewer might have a different perspective. It’s okay to note that: “I found the evaluation weak in
+area X, but I’m not an expert in that sub-area; I welcome thoughts from other reviewers on this
+point.” This invites a collaborative tone rather than a combative one. In the discussion phase, if
+you’re part of it, continue to be professional and open to changing your mind if warranted. The
+key is that the process is about the paper, not about who’s right. Keep the goal in mind: reach
+the best assessment of the work through constructive dialogue.
+Avoid Summary in the Critique Section: As you write the strengths/weaknesses, avoid re-
+describing the paper’s content in that section (you have a summary at the top for that). Dive
+directly into evaluation. For example, don’t start your weaknesses section with “The paper did X
+and Y in experiment 1” – that’s summary. Instead, say “Experiment 1 did not consider condition Z,
+which is a weakness because…”. Use the limited space for analysis, not repetition of the content.
+Polish Your Review: Just as we expect papers to be well-written, your review should also be
+clearly written and organized. Before submitting it, proofread for clarity and tone. Ensure each
+major point is separate (using paragraphs or bullet lists if that helps). A tidy, well-structured
+review is easier for others to read and take seriously. If you have many points, consider numbering
+or bulleting some of them under “strengths” and “weaknesses”. This can help the authors digest
+your feedback.
+Confidential vs. Public Comments: The main review is visible to authors. If you have something
+you want to say only to the program committee (ACs) – for example, suspicions of plagiarism, or a
+personal note like “I am not fully confident in evaluating the theory part” – use the confidential
+comments section (if provided by the system). Do not put anything in the main review that you
+wouldn’t say to the authors directly. NeurIPS makes reviews public for accepted papers, and
+sometimes for rejected ones too, so imagine your review being read by many people (with your
+name not revealed, but still). Write nothing you would be ashamed of if it were read openly.
+In essence, be the kind of reviewer you would like to have for your own paper. Even if a paper has
+many issues, delivering that message in a collegial and helpful way makes a huge difference. The authors
+are much more likely to listen to and learn from your review if it comes across as well-intentioned and
+knowledgeable, rather than hostile or careless. NeurIPS values the tone and quality of reviews – area
+chairs also read your review and will notice if it’s constructive or not. In fact, a thoughtful, thorough
+6
+review reflects well on you as a reviewer and contributes to the community’s trust in the process .
+Finally, remember that your review is part of a conversation, not the final word. Be open to the authors’
+rebuttal – maybe they will correct a misunderstanding or provide additional results. In the discussion,
+keep the same respectful tone. The goal is collectively to reach the best decision about the paper and to
+help the authors improve their work, if not for NeurIPS then for wherever they publish next.
+By following these guidelines on accuracy, novelty, significance, clarity, empirical rigor, ethics, and
+constructive feedback, you will produce a comprehensive and fair review in the spirit of NeurIPS
+standards. A great review doesn’t just critique – it educates, enlightens, and guides. By being thorough
+15
+in evaluation and respectful in tone, you help
