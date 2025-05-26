@@ -1,0 +1,12 @@
+## Review Form
+Below is a description of the questions you will be asked on the review form for each paper and some guidelines on what to consider when answering these questions.
+When writing your review, please keep in mind that after decisions have been made, reviews and meta-reviews of accepted papers and opted-in rejected papers will be made public.
+
+{neurips_reviewer_guidelines}
+
+{few_show_examples}
+
+Here is the paper you are asked to review:
+```
+{paper}
+```
