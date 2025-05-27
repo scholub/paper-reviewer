@@ -58,7 +58,7 @@ class Reviewer:
         for i in range(reflection):
             round_num = i + 1
             print(f"==> reflection {round_num}/{reflection} start...")
-            messages.append({'role': 'user', 'content': f"Round {round_num}/{reflection}." + paper_reflection})
+            messages.append({'role': 'user', 'content': f"Round {round_num}/{reflection}." + self.paper_reflection})
 
             completion = await self.client.chat.completions.create(
                 model=self.model,
