@@ -4,7 +4,7 @@ import json
 import os
 
 class Reviewer:
-    def __init__(self, model: str = "o4-mini"):
+    def __init__(self, model: str = "o4-mini", prompts_dir: str = "./prompts/paper_review"):
 
         if not os.getenv("OPENAI_API_KEY"):
             raise ValueError("OPENAI_API_KEY environment variable is not set.")
@@ -13,12 +13,12 @@ class Reviewer:
         self.model = model
         self.reviews = []
 
-        self.reviewer_system = Path("./prompts/reviewer_system.txt").read_text()
-        self.paper_review = Path("./prompts/paper_review.txt").read_text()
-        self.neurips_reviewer_guidelines = Path("./prompts/neurips_reviewer_guidelines.txt").read_text()
-        self.few_shot_review_examples = Path("./prompts/few_shot_review_examples.txt").read_text()
-        self.paper_reflection = Path("./prompts/paper_reflection.txt").read_text()
-        self.ensemble_system = Path("./prompts/ensemble_system.txt").read_text()
+        self.reviewer_system = Path(prompts_dir+"/reviewer_system.txt").read_text()
+        self.paper_review = Path(prompts_dir+"/paper_review.txt").read_text()
+        self.neurips_reviewer_guidelines = Path(prompts_dir+"/neurips_reviewer_guidelines.txt").read_text()
+        self.few_shot_review_examples = Path(prompts_dir+"/few_shot_review_examples.txt").read_text()
+        self.paper_reflection = Path(prompts_dir+"/paper_reflection.txt").read_text()
+        self.ensemble_system = Path(prompts_dir+"/ensemble_system.txt").read_text()
 
 
 
