@@ -1,25 +1,34 @@
-from openai import OpenAI
+from openai import AsyncOpenAI
 from pathlib import Path
 import json
 import os
 
 class Reviewer:
     def __init__(self, model: str = "o4-mini"):
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+        if not os.getenv("OPENAI_API_KEY"):
+            raise ValueError("OPENAI_API_KEY environment variable is not set.")
+        
+        self.client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.model = model
         self.reviews = []
 
-    def review(self, paper_content: str, reflection: int = 3) -> list[dict]:
-        reviewer_system = Path("./prompts/reviewer_system.txt").read_text()
-        paper_review = Path("./prompts/paper_review.txt").read_text()
-        neurips_reviewer_guidelines = Path("./prompts/neurips_reviewer_guidelines.txt").read_text()
-        few_shot_review_examples = Path("./prompts/few_shot_review_examples.txt").read_text()
-        paper_reflection = Path("./prompts/paper_reflection.txt").read_text()
+        self.reviewer_system = Path("./prompts/reviewer_system.txt").read_text()
+        self.paper_review = Path("./prompts/paper_review.txt").read_text()
+        self.neurips_reviewer_guidelines = Path("./prompts/neurips_reviewer_guidelines.txt").read_text()
+        self.few_shot_review_examples = Path("./prompts/few_shot_review_examples.txt").read_text()
+        self.paper_reflection = Path("./prompts/paper_reflection.txt").read_text()
+        self.ensemble_system = Path("./prompts/ensemble_system.txt").read_text()
 
-        messages = [{'role': 'system', 'content': reviewer_system}]
 
-        paper_review = paper_review.replace("{neurips_reviewer_guidelines}", neurips_reviewer_guidelines)
-        paper_review = paper_review.replace("{few_show_examples}", few_shot_review_examples)
+
+    async def review(self, paper_content: str, reflection: int = 3) -> list[dict]:
+        
+
+        messages = [{'role': 'system', 'content': self.reviewer_system}]
+
+        paper_review = paper_review.replace("{neurips_reviewer_guidelines}", self.neurips_reviewer_guidelines)
+        paper_review = paper_review.replace("{few_show_examples}", self.few_shot_review_examples)
         paper_review = paper_review.replace("{paper}", paper_content)
 
         prompt = paper_review
@@ -28,8 +37,8 @@ class Reviewer:
 
         # 1) 최초 리뷰 생성
         print("==> initial review generation start...")
-        completion = self.client.chat.completions.create(
-            model="o4-mini",
+        completion = await self.client.chat.completions.create(
+            model=self.model,
             messages=messages,
         )
 
@@ -51,8 +60,8 @@ class Reviewer:
             print(f"==> reflection {round_num}/{reflection} start...")
             messages.append({'role': 'user', 'content': f"Round {round_num}/{reflection}." + paper_reflection})
 
-            completion = self.client.chat.completions.create(
-                model="o4-mini",
+            completion = await self.client.chat.completions.create(
+                model=self.model,
                 messages=messages,
             )
             try:
@@ -71,27 +80,26 @@ class Reviewer:
 
         return self.reviews
 
-    def review_ensembling(self) -> list[dict]:
+    async def review_ensembling(self) -> list[dict]:
         if not self.reviews:
             raise ValueError("No reviews available for ensembling.")
 
         print("==> review ensembling start...")
-        neurips_reviewer_guidelines = Path("./prompts/neurips_reviewer_guidelines.txt").read_text()
-        ensemble_system = Path("./prompts/ensemble_system.txt").read_text()
-        ensemble_system = ensemble_system.replace("{reviewer_count}", str(len(self.reviews)))
+        
+        self.ensemble_system = self.ensemble_system.replace("{reviewer_count}", str(len(self.reviews)))
 
-        messages = [{'role': 'system', 'content': ensemble_system}]
+        messages = [{'role': 'system', 'content': self.ensemble_system}]
 
         prompt = ""
         for idx, content in enumerate(self.reviews):
             review_text = json.dumps(content, indent=2) if isinstance(content, dict) else str(content)
             prompt += f"Review {idx + 1}/{len(self.reviews)}:\n{review_text}\n\n"
 
-        prompt += "\n\n\n\n\n" + neurips_reviewer_guidelines
+        prompt += "\n\n\n\n\n" + self.neurips_reviewer_guidelines
         messages.append({'role': 'user', 'content': prompt})
 
-        completion = self.client.chat.completions.create(
-            model="o4-mini",
+        completion = await self.client.chat.completions.create(
+            model=self.model,
             messages=messages,
         )
 
