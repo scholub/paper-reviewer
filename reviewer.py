@@ -1,7 +1,9 @@
-from openai import AsyncOpenAI
-from pathlib import Path
 import json
 import os
+from pathlib import Path
+
+from openai import AsyncOpenAI
+
 
 class Reviewer:
     def __init__(self, model: str = "o4-mini", prompts_dir: str = "./prompts/paper_review"):

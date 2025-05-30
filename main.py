@@ -1,5 +1,6 @@
-from reviewer import Reviewer
 from pathlib import Path
+
+from .reviewer import Reviewer
 
 if __name__ == "__main__":
     paper_content = Path("./paper.txt").read_text()
