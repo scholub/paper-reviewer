@@ -29,6 +29,8 @@ class Reviewer:
 
         messages = [{'role': 'system', 'content': self.reviewer_system}]
 
+        paper_review = self.paper_review 
+
         paper_review = paper_review.replace("{neurips_reviewer_guidelines}", self.neurips_reviewer_guidelines)
         paper_review = paper_review.replace("{few_show_examples}", self.few_shot_review_examples)
         paper_review = paper_review.replace("{paper}", paper_content)
